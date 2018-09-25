@@ -1,0 +1,49 @@
+When would you want to use a remote repository rather than keeping all your work
+local?
+
+Contributors can help you more easily if your repository is remote, like on
+Github.  Also, others are able to copy your repository to use it for their own
+needs. Also, if a repository is in the cloud, it is easy to access if you were
+to lose your computer or delete the repository locally.
+
+Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+If you pulled changes manually, you would be able to choose what changes are on
+your local repository and what changes are on your remote repository. This would
+extremely helpful when you are making separate branches through your terminal,
+and you do not know if you want to display those experimental features.
+
+Describe the differences between forks, clones, and branches.  When would you
+use one instead of another?
+
+Forking clones a repository on GitHub, while clone clones a repository from
+GitHub to your local repository.  Branching creates 2 different versions of the
+same file in your repository so that you can edit both or just 1.  I would use
+branching when implementing a new idea locally, I would use cloning after I
+was working on a repository, which is on GitHub, locally, and I would use
+forking when copying another person's repository on GitHub.
+
+What is the benefit of having a copy of the last known state of the remote
+stored locally?
+
+Having a copy of the last known state of the remote stored locally would
+decrease the chances of having a merge conflict if you were to pull a commit
+from a remote repository like GitHub.
+
+How would you collaborate without using Git or GitHub?  What would be easier,
+and what would be harder?
+
+Without using Git or Github, you would need to email your code to your
+collaborator and once he/she is done, then you could work on it.  You wouldn't
+get any merge conflicts, but the process would be much slower - you couldn't
+work on it at the same time.
+
+When would you want to make changes in a separate branch rather than directly in
+master?  What benefits does each approach have?
+
+Changes in a separate branch allow you to fix something without braking the
+entire master branch.  Some good examples of this are fixing bugs or adding new
+features.  You would then merge that branch with the master branch.  If you work
+on the master branch, you change everything at once - it's more risky but is
+also faster

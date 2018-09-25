@@ -1,0 +1,85 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Viewing a diff between two versions allows you to see which lines have been
+    added, taken away, or not changed at all.  By looking at the pluses and
+    minuses, you can find which lines have been changed from the older commit,
+    and therefore you can filter through those lines until you find a bug. In
+    summary, viewing a diff minimizes the amount of lines you need to look
+    through, helping you find the bug more quickly.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    By having easy access to the entire history of a file, you can switch
+    between older versions of that file and newer versions of the same file.
+    For example, if you made a change and later found out that you didn't like
+    the change, you could revert your document to an older version, in which
+    that change is not present. This method would be much more efficient in the
+    long term than attempting to undo that change on your current document.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    If you were to have your code automatically saved in the middle of
+    writing code, that version would be close to useless; chances are, you were
+    in the middle of finishing a section of code when that file was
+    automatically saved.  If you were to go back to that version of the file,
+    you would have to finish that section of code - that was not finished -
+    before then implementing new changes to your code.  If you had saved
+    manually, you could go back to a previous version which had a logical
+    ending, meaning you could start implementing new changes to your code, and
+    you wouldn't have to finish the unfinished section of code. Also manual
+    committing makes you attach a commit message, allowing you to include if a
+    bug was fixed or if a new feature was added, making it easier to navigate
+    through your commits.  One downside of manually saving is that might forget
+    to save your work;  Forgetting to save often would increase the amount of
+    code written in between commits, leading to an increased amount of work if
+    you were to go back to that file.  Another downside of manual saving is user
+    error, that is saving too often - hard to find the correct file - or saving
+    too infrequently - increased amount of work needed to be done if you were to
+    revert to that older file.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    If two files are linked together in some way through Git, assume a webpage
+    with css code and javascript code, it would be helpful to save both at the
+    same time; instead of having two different files saved at two different
+    times, where you would need to dig through the log of one file to find the
+    version you are looking for and then dig through another file to find a
+    version saved at approximately at the same time. One version would allow you
+    to easily access the css code and javascript code that were saved at the
+    same time. I think Google Docs allows you to treat each file separately
+    since most files don't have to be saved at the same time - either the two
+    files are unrelated or the user put the two files inside of a single file so
+    they are saved at the same time.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    When using Git diff, navigate to where the files were downloaded by using
+    "cd " and then the name of the location - example:
+    "downloads/version-control/etc..." , and hit enter.  Then you would type
+    "diff -u" -- the "-u" is optional, it gives the user a unified diff format
+    which is easier to read -- and then the name of the older file, and the file
+    you want to compare it to.  You will then find the differences between the
+    two by looking at the pluses and minuses.  When using Git log, you also have
+    to navigate to the directory where the code is located.  Then you can type
+    "git log" and hit enter to view the history of your commits.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Before making a change that could break something, you could save the code
+    and then make that change that could break something.  If it doesn't break
+    something - perfect!  However, if it does break what you are
+    making, you can access your commits by using "git log", and then you can
+    work on a commit which was made before your big change.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Now that my workspace is set up, I want to use Git to learn the basics of
+    coding.  I want to experiment with different languages and different goals
+    - eg. website / game / app - so that in the future, I can create some cool
+    creations using code.
