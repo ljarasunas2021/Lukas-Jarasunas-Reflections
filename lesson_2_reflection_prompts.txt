@@ -10,23 +10,27 @@ What value do you think it offers?
 The staging area is an intermediate area between your working directory and the
 repository.  The working area is where you make your changes, and then you move
 that file into the staging area.  By using the staging area, you can specificy
-exactly what changes should be committed.
+exactly what changes should be committed.  Then you can then commit that file to
+your repository where your code, which is usually neat and polished, is stored
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
 If you have made multiple changes to separate files in the working directory,
 you can add whatever you think 1 logical change is to your staging area using
-git add, and then you can type git commit to commit that logical change.  If you
-have any more logical changes, you can use the same process to commit those
-changes.
+git add, and then you can type git commit to commit that logical change.  By
+-m "your message" after your commit, you add a commit message to help you
+understand what logical change you made. If you have any more logical changes,
+you can use the same process to commit those logical changes.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-Branches are helpful when fixing bugs, adding new features, creating a sperate
+Branches are helpful when fixing bugs, adding new features, creating a separate
 version and/or updating documentation.  Instead of recording ID numbers and
-using git checkout for previous files, one can simply use branches instead.
+using git checkout for previous files, one can simply use branches instead
+without having to restore older files more often or only work on one version of
+a project at a time.
 
 How do the diagrams help you visualize the branch structure?
 
@@ -57,4 +61,4 @@ merge might have to guess on a few lines of code, where the two commits are not
 the same.  The automatic merge will use all of the data it can in an attempt to
 make the correct change, but at the end of the day computers are only so smart,
 and it might be easier to make the change yourself than to trust the computer
-and possibly have to go back and change the code yourself. 
+and possibly have to go back and change the code yourself.
