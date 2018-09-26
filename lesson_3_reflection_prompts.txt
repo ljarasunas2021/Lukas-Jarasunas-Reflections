@@ -4,7 +4,8 @@ local?
 Contributors can help you more easily if your repository is remote, like on
 Github.  Also, others are able to copy your repository to use it for their own
 needs. Also, if a repository is in the cloud, it is easy to access if you were
-to lose your computer or delete the repository locally.
+to lose your computer or delete the repository locally.  It can also showcase
+your work publicly (or privately).
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
@@ -12,7 +13,9 @@ automatically stay up-to-date with your remote repository?
 If you pulled changes manually, you would be able to choose what changes are on
 your local repository and what changes are on your remote repository. This would
 extremely helpful when you are making separate branches through your terminal,
-and you do not know if you want to display those experimental features.
+and you do not know if you want to display those experimental features.  Also
+you may not want your contributors code locally as that could create some
+confusion if you are unaware that he added branches or files to the repository.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
@@ -29,21 +32,28 @@ stored locally?
 
 Having a copy of the last known state of the remote stored locally would
 decrease the chances of having a merge conflict if you were to pull a commit
-from a remote repository like GitHub.
+from a remote repository like GitHub.  Also, it would be much easier if you were
+up to date with the most recent code instead of behind in some lines but ahead
+in other lines.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-Without using Git or Github, you would need to email your code to your
-collaborator and once he/she is done, then you could work on it.  You wouldn't
-get any merge conflicts, but the process would be much slower - you couldn't
-work on it at the same time.
+You would need to email your code to your collaborator and once he/she is done,
+then you could work on it.  If you worked on the project while your partner was
+working on the project, you would have to go through many merge conflicts
+manually.  It would be hard to showcase your work you made, and it would be an
+inefficient process when trying to manually merge, so you would have to wait for
+the collaborator to finish their work.  On the up-side, you would never have to
+go through merge conflicts or learn how to use git and GitHub in general.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
 Changes in a separate branch allow you to fix something without braking the
 entire master branch.  Some good examples of this are fixing bugs or adding new
-features.  You would then merge that branch with the master branch.  If you work
-on the master branch, you change everything at once - it's more risky but is
-also faster
+features.  You would then merge that branch with the master branch.  If you
+changed the master branch, you would often be required to checkout past versions
+of code more often.  However, if you work on the master branch, you change
+everything at once - it's more risky but it also may be faster -- that is if you
+don't make any mistakes.
